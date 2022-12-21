@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector 선택자 - class #, id (.)</title>
+    <style>
+        .name{
+            color: blue;
+            font-size: 20px;
+            background-color: aqua;
+        }
+        #abc{
+            color: rebeccapurple;
+            font-size: 30px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1> class #, id (.) 선택자1</h1>
+    <h2> class #, id (.) 선택자2</h2>
+    <h3> class #, id (.) 선택자3</h3>
+
+        폰트에 속성을 주는 방법은 
+        <div class="name">태그와 다른 태그 안의 스타일(style) 속성 두 가지를 쓸 수 있겠다.</div>
+        이전에는 폰트를 적용할 때 
+        <div class="name" > ~~ </div>
+        와 같이 하였는데, HTML5에서는 
+        <span id="abc"> 태그를 지원하지 않는다. 물론, HTML5가 
+            일반화되고 브라우저 버전이 올라가도 이전에 만들어진 HTML 문서의 </span>
+        태그는 이상없이 작동을 할 것이므로 걱정할 일은 아니다.
+        <span id="abc">단지, 앞으로 만드는 HTML문서는 가급적이면 스타일(style) 
+            속성으로 주는 것이 낫지 않을까 싶다.</span>
+        
+
+
+    <div>div 태그 선택자</div>
+    <span>span 태그 선택자</span>
+
+</body>
+</html>
