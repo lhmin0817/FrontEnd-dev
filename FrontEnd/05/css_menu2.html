@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css_menu1 - left</title>
+    <style>
+        /* 기존의 설정된 값을 리셋 : */
+        *{
+            margin: 0; padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            font-size: 14px;
+        }
+        /* 수정부분 시작 */
+        .menu{
+            width: 300px; 
+            margin: 150px;
+            border: 1px solid red;
+        }
+        .menu > li{
+            /* float: left; 주석 처리 : top 메뉴 구성 시 사용 */
+            text-align: center;
+            width: 100%;
+            line-height: 40px;
+            background-color: #5778ff;
+        }
+        .menu a {
+            color: white;
+        }
+        .submeun > li{
+            background-color: #94a9ff;
+        }
+        /* submeun 는 기본적으로 보이지 않게 처리 */
+        .submeun {
+            height: 0;
+            overflow: hidden;
+        }
+        .menu > li:hover{
+            background-color: #94a9ff;
+            transition-duration: 0.5s;
+        }
+        .menu > li:hover .submeun{
+            height: 200px;
+            transition-duration: 0.5s;
+            
+        }
+
+        /* 수정부분 끝*/
+        
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li>
+            <a href="#">MENU 1</a> <!-- 상위 메뉴 -->
+            <ul class="submeun"> <!-- 하위 메뉴 -->
+                <li><a href="#">SUBMEUN 01</a></li>
+                <li><a href="#">SUBMEUN 02</a></li>
+                <li><a href="#">SUBMEUN 03</a></li>
+                <li><a href="#">SUBMEUN 04</a></li>
+                <li><a href="#">SUBMEUN 05</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">MENU 2</a> <!-- 상위 메뉴 -->
+            <ul class="submeun"> <!-- 하위 메뉴 -->
+                <li><a href="#">SUBMEUN 01</a></li>
+                <li><a href="#">SUBMEUN 02</a></li>
+                <li><a href="#">SUBMEUN 03</a></li>
+                <li><a href="#">SUBMEUN 04</a></li>
+                <li><a href="#">SUBMEUN 05</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">MENU 3</a> <!-- 상위 메뉴 -->
+            <ul class="submeun"> <!-- 하위 메뉴 -->
+                <li><a href="#">SUBMEUN 01</a></li>
+                <li><a href="#">SUBMEUN 02</a></li>
+                <li><a href="#">SUBMEUN 03</a></li>
+                <li><a href="#">SUBMEUN 04</a></li>
+                <li><a href="#">SUBMEUN 05</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">MENU 4</a> <!-- 상위 메뉴 -->
+            <ul class="submeun"> <!-- 하위 메뉴 -->
+                <li><a href="#">SUBMEUN 01</a></li>
+                <li><a href="#">SUBMEUN 02</a></li>
+                <li><a href="#">SUBMEUN 03</a></li>
+                <li><a href="#">SUBMEUN 04</a></li>
+                <li><a href="#">SUBMEUN 05</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">MENU 5</a> <!-- 상위 메뉴 -->
+            <ul class="submeun"> <!-- 하위 메뉴 -->
+                <li><a href="#">SUBMEUN 01</a></li>
+                <li><a href="#">SUBMEUN 02</a></li>
+                <li><a href="#">SUBMEUN 03</a></li>
+                <li><a href="#">SUBMEUN 04</a></li>
+                <li><a href="#">SUBMEUN 05</a></li>
+            </ul>
+        </li>
+</body>
+</html>
