@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px; padding: 0px;
+            text-align: center;
+        }
+        @keyframes bounce {
+            from, to{bottom:0px; -o-animation-timing-function: ease-out;}
+            50%{bottom: 200px; animation-timing-function: ease-in;}
+        }
+        div{
+            position: absolute;
+            width: 20px; height: 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+            animation: bounce;
+            animation-iteration-count: infinite;
+        }
+        /* #d1{
+            left: 10px;
+            background-color: red;
+            animation-duration: 5s;
+        }
+        #d2{
+            left: 50px;
+            background-color: orange;
+            animation-duration: 10s;
+        }
+        #d3{
+            left: 90px;
+            background-color: yellow;
+            animation-duration: 3s;
+        }
+        #d4{
+            left: 130px;
+            background-color: green;
+            animation-duration: 8s;
+        }
+        #d5{
+            left: 170px;
+            background-color: blue;
+            animation-duration: 1s;
+        } */
+        #d1{
+            right:10px;
+            background-color: red;
+            animation-duration: 5s;
+        }
+        #d2{
+            right:50px;
+            background-color: orange;
+            animation-duration: 10s;
+        }
+        #d3{
+            right:90px;
+            background-color: yellow;
+            animation-duration: 3s;
+        }
+        #d4{
+            right:130px;
+            background-color: green;
+            animation-duration: 8s;
+        }
+        #d5{
+            right:170px;
+            background-color: blue;
+            animation-duration: 1s;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="d1">1</div>
+    <div id="d2">2</div>
+    <div id="d3">3</div>
+    <div id="d4">4</div>
+    <div id="d5">5</div>
+</body>
+</html>
