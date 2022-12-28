@@ -19,7 +19,7 @@
 
         }
         #p{
-            width: 98%;
+            width: 980px;
             margin: 0 auto;
         }
         ul{
@@ -130,10 +130,6 @@
             float: left;
             margin: 0 15px 0 15px;
         }
-        .bo li{
-            margin: 5px 0 0 20px;
-            list-style-image: url("../mp01/11/blue_dot.gif");
-        }
         .bo h3{
             font-size: 15px;
             color: #12b9b2;
@@ -142,6 +138,39 @@
         .bo ul{
             color:#666666;
         }
+        .bo li{
+            margin: 5px 0 0 20px;
+            list-style-image:url("../mp01/11/blue_dot.gif");
+        }
+        footer{
+            padding: 20px 0 0 15px;
+            border-top:2px solid #06b5b8;
+            color: #666666;
+        }
+        #link{
+            
+            float: right;
+        }
+        #fmenu li{
+            margin-top: 5px;
+        }
+        footer #address{
+            margin:20px;
+        }
+        footer address li{
+            margin-top: 2px;
+        }
+        #link select{
+            margin: 5px 0 0 55px;
+            width: 100px;
+            height: 25px;
+            font-size: 14px;
+        }
+        #icon{
+            margin-top: 5px;
+            text-align: right;
+        }
+
        
     </style>
 </head>
@@ -269,12 +298,35 @@
                     <li>찾아오시는 길</li>
                 </ul>
             </div>
-                <div class="c"></div>
+                
             </article>
         </main>
+        <div class="c"></div>
         <footer id="bottom-menu">
             <article id="left-b-menu">
-                
+                <ul id="fmenu">
+                    <li>개인정보 취급방침 | 이용안내 | 이메일 무단수집 거부</li>
+                    <li>서민금융119서비스 | 보험범죄 신고 | 전지 민원 접수 | 보험약관 안내 | 금융사기신고센터</li>
+                </ul>
+                <div class="address"> <img src="../mp01/11/address.gif"></div>
+
+            </article>
+            <article id="link">
+                <div class="tell">
+                    <img src="../mp01/11/phonenum.gif">
+                </div>
+                <section>
+                    <select name="checkbox">
+                        <option value="페이스북" selected> 페이스북</option>
+                        <option value="t"> 03</option>
+                        <option value="b"> 04</option>
+                    </select>
+                </section>
+                <div id="icon">
+                    <img src="../mp01/11/b.gif">
+                    <img src="../mp01/11/f.gif">
+                    <img src="../mp01/11/t.gif">
+                </div>
             </article>
         </footer>
     </div>
