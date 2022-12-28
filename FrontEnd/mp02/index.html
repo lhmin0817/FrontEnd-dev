@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0; padding: 0;
+        }
+        body{
+            font-family: "맑은고딕", "돋음";
+            font-size: 12px;
+            color: #444444;
+        }
+        #page{
+            /* border: 1px solid red; */
+            width: 970px; height: 1000px;
+            margin: 0 auto; /* 중앙 정렬 */
+        }
+        header{
+            width: 970px; height: 90px;
+            /* border: 1px solid red; */
+        }
+        aside{
+            /* border: 1px solid red; */
+            width: 200px;  height: 800px;
+            margin-top: 20px;
+            float: left;
+        }
+        main{
+            /* border: 1px solid red; */
+            margin-left: 210px;
+            margin-top: 20px;
+            width: 750px; height: 800px;
+        }
+        footer{
+            /* border: 1px solid red; */
+            width: 100%; height: 100px;
+        }
+        ul{
+            list-style: none;
+        }
+        #CL{
+            clear: both;
+        }
+
+        header #header_img{
+            margin: 10px 0 10px 10px;
+            float: left;
+        }
+        header #header_top{
+            font-size: 12px;
+            margin: 10px 20px 0 0;
+            float: right;
+        }
+        header #header_main_meun_img{
+            /* border: 1px solid red; */
+            width:750px;
+            margin: 50px 0 0 210px;
+            
+        }
+        #login_box{
+            width: 180px; height: 100px;
+            border: 1px solid #bbbbbb;
+            border-radius: 15px;
+            margin: 0px 0 0  5px; 
+            padding: 3px 0 0 10px;
+            background-color: #e9ebeb;
+        }
+        #input_button{
+            padding-left: 3px;
+        }
+        #login_box input{ 
+            width: 100px; height: 18px;
+        }
+        #id_pass, #login_btn{
+            display: inline-block;
+            vertical-align: top;  
+        }
+        #btns{
+            margin: 2px;
+        }
+        #btns li{
+            display: inline;
+        }
+        #aside_bang{
+            width: 175px; height: 130px;
+            border: 1px solid #bbbbbb;
+            border-radius: 15px;
+            margin: 5px 0 0  5px; 
+            padding: 10px 0 0 15px;
+            background-color: #e9ebeb;
+            
+        }
+        #aside_bang div{
+            height: 140px;
+            float: left;
+            margin: 0 15px 0 15px;
+            
+        }
+        #aside_bang h3{
+            font-size: 15px;
+            margin-left: 1px;
+            border-bottom:2px solid #b7bfbf;
+        }
+        #aside_bang li{
+            margin: 5px 0 0 20px;
+            list-style-image:url("img/icon_blue.gif");
+        }
+        main > #main_img{
+        border: 1px solid blue;
+        height: 100px; width:510px;
+        margin: 10px;
+        float: left;
+        }
+        #notice{
+            width: 330px; height: 110px;
+            float: left;
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+        #notice .cs1{
+            margin-left: 10px;
+            float: left;
+        }
+        #notice .cs2{
+            float: right;
+        }
+        #notice li{
+            margin-top: 12px;
+            color: #666666;
+        }
+        #notice li{
+            margin-top: 5px;
+        }
+        #notice .nt1{
+            float: left;
+            margin-left: 10px;
+        }
+        #notice .nt2{
+            float: right;
+            margin-right: 5px;
+        }
+        .notice_img{
+            float: left;
+        }
+        main #main_img{
+            /* border: 1px solid red; */
+            height: 260px; width: 750px;
+            margin: 0px 20px 0 0;
+            float: left;
+        }
+
+
+       #list{
+        width: 360px;height: 110px;
+        border: 1px solid blue;
+        margin-top: 270px;
+        border-bottom:1px solid #666666;
+       }
+       #latest .latest1{
+        /* border: 1px solid blue; */
+        /* float: left; */
+       }
+       #more{
+        /* border: 1px solid blue; */
+        float: right;
+       }
+       #book_pen{
+        border: 1px solid blue;
+        margin-right: 15px;
+        float: left;
+       }
+       #book{
+        border: 1px solid blue;
+       margin-top: 10px;
+       float: left;
+       }
+       #b1{
+        margin: 10px 10px 0 10px;
+        float: right;
+       }
+       #b2, #b3, #b4{
+        float: right;
+        margin: 1px 10px 0 10px;
+       }
+       
+       #list2{
+        width: 360px;height: 110px;
+        border: 1px solid blue;
+        /* margin-top: 270px; */
+        border-bottom:1px solid #666666;
+       }
+       #you{
+        margin:-225px 10px 10px 0;
+        width: 360px; height: 225px;
+        border: 1px solid red;
+        float: right;
+       }
+      #list4{
+        margin-top: 50px;
+        margin-left: 3px;
+      }
+      .latest4_pt{
+        width: 700px; height: 200px;
+            border: 1px solid #bbbbbb;
+            border-radius: 15px;
+            margin: 5px 0 0  5px; 
+            padding: 10px 0 0 15px;
+      }
+      .latest4_pt_1{
+        margin: 20px;
+      }
+      .latest4_pt ul {
+        display: inline;
+      }
+    </style>
+</head>
+<body>
+    <div id="page" > 
+        <header>
+            <div id="header_img" > <img src="img/logo.png"></div>
+            <div id="header_top"> HOME | LOGIN | JOIN | NOTICE</div>
+            <div id="Cl"></div>
+            <div id="header_main_meun_img">
+                <img src="img/main_menu_bg.png">
+            </div>
+        </header>
+        <aside>
+            <div id="login_box">
+                <img src="img/ttl_login.png"
+                <ul id="input_button">
+                    <li id="id_pass">
+                        <ul>
+                            <li>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <input type="password">
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="login_btn"><img src="img/btn_login.gif"></li>
+                </ul>
+                <ul id="btns">
+                    <li><img src="img/btn_join.gif"></li>
+                    <li id="id_pass2"><img src="img/btn_search.gif"></li>
+                </ul>
+            </div>
+            <div id="aside_bang">
+                <h3>방명록</h3>
+                <ul>
+                    <li>안녕하세요!</li>
+                    <li>안녕하세요!</li>
+                    <li>안녕하세요!</li>
+                    <li>안녕하세요!</li>
+                </ul>
+            </div>
+        </aside>
+        <!-- <div id="CL"></div> -->
+        <main>
+            <div id="main_img">  
+                <img src="img/main_img.png">
+            </div>
+
+          <article id="list">
+            <ul>
+                <li><img id="latest1" src="img/latest1.gif"> <img id="more" src="img/more.gif"></li>
+                <li><img id="book" src="img/book_pen.gif"></li>
+
+                <li id="b1">루바토 개편과 사이트 이용.. 2017-09-20</li>
+                <li id="b2">루바토 개편과 사이트 이용.. 2017-09-20</li>
+                <li id="b3">루바토 개편과 사이트 이용.. 2017-09-20</li>
+                <li id="b4">루바토 개편과 사이트 이용.. 2017-09-20</li>
+            </ul>
+          </article>
+        
+          <article id="list2">
+            <ul>
+                <li><img id="latest2" src="img/latest2.gif"> <img id="more" src="img/more.gif"></li>
+                <li><img id="book" src="img/book_pen.gif"></li>
+
+                <li id="b1">까스릉님의 선물인 보드카.. 2017-09-20</li>
+                <li id="b2">까스릉님의 선물인 보드카.. 2017-09-20</li>
+                <li id="b3">까스릉님의 선물인 보드카.. 2017-09-20</li>
+                <li id="b4">까스릉님의 선물인 보드카.. 2017-09-20</li>
+            </ul>
+          </article>
+        <article id="you">
+            <ul>
+                <li><img id="youtu" src="img/latest3.gif"> <img id="more" src="img/more.gif"></li>
+                <iframe width="360" height="205" src="https://www.youtube.com/embed/saq8h5H5uf0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+        
+        <article id="list4">
+            <img id="latest4_1" src="img/latest4.gif">
+            <ul class="latest4_pt">
+                <li> 
+                    <ul>
+                        <li><img class="latest4_pt_1" src="img/img1.jpg"></li>
+                        <li> 기타 페스티벌 4중주</li>
+                    </ul>
+                    <ul>
+                        <li><img class="latest4_pt_1" src="img/img1.jpg"></li>
+                        <li> 기타 페스티벌 4중주</li>
+                    </ul><ul>
+                        <li><img class="latest4_pt_1" src="img/img1.jpg"></li>
+                        <li> 기타 페스티벌 4중주</li>
+                    </ul>
+                </li> 
+            </ul>
+          </article>
+        </main>
+        
+        <footer></footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #weap{
+            border: 1px solid red;
+            width: 90%;
+            margin: 0 auto; /* 중앙 정렬 */
+        }
+        header{
+            width: 100%; height: 90px;
+            border: 1px solid red;
+        }
+        aside{
+            border: 1px solid red;
+            width: 30%;  height: 800px;
+            float: left;
+        }
+        main{
+            border: 1px solid red;
+            margin-left: 30%;
+            width: 70%; height: 800px;
+        }
+        footer{
+            border: 1px solid red;
+            width: 100%; height: 90px;
+        }
+        main > div{
+            border: 1px solid red;
+            height: 100px; width: 20%;
+            margin: 10px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- 유동형 레이아웃 : 화면의 넓이에 따라서 크기가 변화하는 레이아웃
+        width : %, em, rem(배율)
+     -->
+     <div id="weap">
+        <header> 헤더</header>
+        <aside>좌측</aside>
+        <main>메인
+            <div></div>
+            <div></div>
+            <div></div>
+        </main>
+        <footer>푸더</footer>
+    </div>
+</body>
+</html>
