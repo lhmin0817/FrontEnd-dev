@@ -1,0 +1,125 @@
+
+aside{
+    width: 190px; 
+    float: left;
+}
+#login-box{
+    width: 186px; height: 120px;
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+    background-color: #f3f3f3;
+}
+#login-ttl_login{
+    margin: 10px 0 0 10px;
+}
+#login-button{
+    margin: 10px 0 0 10px;
+}
+#login-input{
+    float: left;
+}
+#btn_login{
+    float: left;
+    margin: 3px 0 0 5px;
+}
+#login-input input{
+    width: 100px; height: 20px;
+    border: 1px solid #dddddd;
+}
+#login-input li{
+    margin-top: 2px;
+}
+#join-search{
+    margin: 10px 0 0 5px;
+}
+
+#guestbook{
+    width: 189px; height: 135px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #dddddd;
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+}
+#guestbook-t{
+    width: 165px; 
+    padding: 10px 0 0 5px;
+    margin: 0 0 0 8px;
+    border-bottom: 1px solid gray;
+}
+#guestbook ul{
+    margin: 10px 0 0 40px;
+}
+#guestbook li{
+    margin-top: 5px;
+    list-style-image: url(../img/icon_blue.gif);
+}
+#main{
+    width: 758px;
+    float: right;
+    border: 1px solid red;
+}
+#main-menu{
+    height: 250px;
+    position: relative;
+    margin-top: 30px;
+}
+#notice{
+    width: 360px;
+    border: 1px solid red;
+    position: absolute;
+}
+.larest{
+    padding-bottom: 3px;
+    border-bottom: 1px solid #cccccc;
+}
+.latest1{
+    float: left;
+}
+.more{
+    float: right;
+}
+.image{
+    float: left;
+    margin: 10px 0 0 20px;
+}
+.list{
+    float: right;
+}
+.larest-1 li{
+    padding: 10px 0 10px 0;
+}
+.list div{
+    float: left;
+}
+.sub{
+    width: 170px;
+}
+#free{
+        width: 360px;
+        position: absolute;
+        top: 120px;
+}
+#youtube{
+    width: 365px;height: 250px;
+    position: absolute;
+    left: 380px;
+}
+#gallery-box{
+    width: 749px;height: 204px;
+    margin: 10px 0 0 5px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #dddddd;
+}
+#gallry-list{
+    padding: 25px 0 0 18px;
+}
+.items{
+    float: left;
+    text-align: center;
+    margin-left: 35px;
+}
+.ltems li{
+    margin-top: 3px;
+}
