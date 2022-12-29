@@ -7,22 +7,23 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/board_left.css">
-    <link rel="stylesheet" type="text/css" href="css/board_left_main.css">
+    <link rel="stylesheet" type="text/css" href="css/board_list_main.css">
     
 
 </head>
 <body>
     <div id="page" > 
         <header>
-            <a href="index.html"></a>
+            <a href="index.html">
             <img id="logo" src="img/logo.png">
+            </a>
             <nav id="top-menu">
-                HOME | LOGIN | JOIN | NOTICE   
+               <a href="index.html">HOME</a> | LOGIN | JOIN | NOTICE   
             </nav>
-            <nav id="main-menu">
+            <nav id="menu">
                 <ul>
                     <li><a href="board_list.html">자유게시판</a></li>
                     <li><a href="#">기타 연주</a></li>
@@ -32,6 +33,7 @@
                 </ul>
             </nav>
            </header>
+
            <aside>
             <article id="login-box">
                 <img id="ttl_login" src="img/ttl_login.png">
@@ -63,7 +65,8 @@
                     <li><img src="img/banner3.png"></li>
                 </ul>
             </article>
-            <section id="sub-main">
+           </aside>
+            <section id="main">
                 <img src="img/comm.gif">
                 <h2 id="board_title">자유 게시판</h2>
                 <div id="total_search">
@@ -128,12 +131,26 @@
                 </table>
                 <div id="buttons">
                     <div class="col1">◀ 이전 1 다음 ▶</div>
-                    <div class="col2"></div>
+                    <div class="col2">
                     <img src="img/list.png">
                     <a href="board_write.html"><img src="img/write.png"></a>
+                    </div>
                 </div>
             </section>
+
+            <footer>
+                <img id="footer-logo" src="img/footer_logo.gif">
+                <ul id="address">
+                    <li>서울시 강남구 삼성동 1234 우 : 123-1234</li>
+                    <li>TEL : 031-123-1234 Email : email@domain.com</li>
+                    <li>COPYRIGHT (C) 루바토 ALL RIGHTS RESERVED</li>
+                </ul>
+                <ul id="foorer-sns">
+                    <li><img src="img/facebook.gif"></li>
+                    <li><img src="img/blog.gif"></li>
+                    <li><img src="img/twitter.gif"></li>
+                </ul>
+            </footer>
     </div>
-    
 </body>
 </html>

@@ -1,15 +1,16 @@
-
+/* 
 aside{
+    border: 1px solid red;
     width: 190px; 
     float: left;
 }
 #login-box{
-    width: 186px; height: 120px;
+    width: 190px; height: 120px;
     border-radius: 10px;
     border: 1px solid #dddddd;
     background-color: #f3f3f3;
 }
-#login-ttl_login{
+#ttl_login{
     margin: 10px 0 0 10px;
 }
 #login-button{
@@ -25,13 +26,14 @@ aside{
 #login-input input{
     width: 100px; height: 20px;
     border: 1px solid #dddddd;
+    margin: 10px 0 0 0;
 }
 #login-input li{
-    margin-top: 2px;
+    margin-top: 3px;
 }
 #join-search{
-    margin: 10px 0 0 5px;
-}
+    margin: 60px 0 0 5px;
+} */
 
 #guestbook{
     width: 189px; height: 135px;
@@ -54,24 +56,26 @@ aside{
     margin-top: 5px;
     list-style-image: url(../img/icon_blue.gif);
 }
+
 #main{
     width: 758px;
     float: right;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
-#main-menu{
+#main #main-menu{
     height: 250px;
     position: relative;
     margin-top: 30px;
 }
 #notice{
     width: 360px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: absolute;
 }
 .larest{
     padding-bottom: 3px;
     border-bottom: 1px solid #cccccc;
+    /* border: 1px solid red; */
 }
 .latest1{
     float: left;
@@ -84,9 +88,13 @@ aside{
     margin: 10px 0 0 20px;
 }
 .list{
+    /* border: 1px solid red; */
     float: right;
 }
 .larest-1 li{
+    padding: 10px 0 10px 0;
+}
+.larest-2 li{
     padding: 10px 0 10px 0;
 }
 .list div{
@@ -96,6 +104,7 @@ aside{
     width: 170px;
 }
 #free{
+    /* border: 1px solid red; */
         width: 360px;
         position: absolute;
         top: 120px;
@@ -112,7 +121,7 @@ aside{
     border-radius: 10px;
     box-shadow: 2px 2px 5px #dddddd;
 }
-#gallry-list{
+#gallery-list{
     padding: 25px 0 0 18px;
 }
 .items{
@@ -120,6 +129,13 @@ aside{
     text-align: center;
     margin-left: 35px;
 }
-.ltems li{
+.items li{
     margin-top: 3px;
+}
+#foorer-sns{
+    float: right;
+    margin: 20px 10px 0 0;
+}
+#foorer-sns li{
+    display: inline;
 }

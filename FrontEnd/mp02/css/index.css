@@ -13,6 +13,7 @@ ul{
     clear: both;
 }
 #page{
+    /* border: 1px solid red; */
     width: 970px;
     margin: 0 auto;
 }

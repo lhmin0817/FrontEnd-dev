@@ -1,8 +1,9 @@
-#sub-main{
-    width: 758px; 
-    float: left;
+#main{
+    width: 758px;
+    float: right;
+    /* border: 1px solid red; */
 }
-board_title{
+#board_title{
     margin-top: 20px;
     padding: 0 0 5px 0;
     border: 1px solid #bbbbbb;
@@ -16,6 +17,7 @@ board_title{
     top: 10px;
 }
 #search{
+    /* border: 1px solid red; */
     position: absolute;
     left: 460px;
 }
@@ -38,6 +40,11 @@ board_title{
     position: absolute;
     top: 6px; width: 100px;
 }
+table{
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+}
 tr{
     height: 30px;
 }
@@ -48,19 +55,20 @@ th{
 td{
     border-bottom: 1px solid #dddddd;
 }
-#sub-main.col1{
+td.col1{
     width: 60px;
     text-align: center;
 }
-#sub-main.col3{
+
+td.col3{
     width: 60px;
     text-align: center;
 }
-#sub-main.col4{
+td.col4{
     width: 80px;
     text-align: center;
 }
-#sub-main.col5{
+td.col5{
     width: 60px;
     text-align: center;
 }
