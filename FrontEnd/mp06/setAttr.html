@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        #setAttr{
+            margin: 0 auto;
+            width: 1000x; height: 800px;
+            /* border: 1px solid red; */
+        }
+        #leftmenu{
+            /* border: 1px solid red; */
+            width: 50%;
+            float: left;
+        }
+        h1{
+            margin: 30px 0 10px 50px;
+            width: 100%;
+            float: left;
+        }
+        .row img{
+            width: 120px; height:120;
+            object-fit: contain;
+        }
+       .row{
+            /* border: 1px solid red; */
+            margin: 30px 0 10px 50px;
+            object-fit: cover;
+        }
+       ul{
+            list-style-type: none;
+            margin: 0; padding: 0;
+        }
+        .row li{
+            display: inline;
+            
+        }
+        #lightbox{
+            width: 360px; height: 360px;
+            margin: 30px 0 10px 50px;
+            /* border: 3px solid blue; */
+            outline:3px dotted gray;
+        }
+        #lightbox img{
+            position: absolute;
+            border: 5px solid #eeeeee;
+        }
+        #rm1{
+            width: 50%;
+            /* border: 1px solid red; */
+            float: left;
+        }
+        #rm1 ul{
+            margin: 50px 0 10px 50px;
+        }
+        #rm1 li{
+            font-size: 25px;
+            margin: 15px 0 0 0;
+        }
+        #rm1 button{
+            width: 90%; height: 65px;
+            margin: 40px 0 40px 0;
+        }
+        #rm1 .rm-1{
+            color: blue;
+        }
+        a{
+            text-decoration-line: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="setAttr">
+        <h1>에디오피아 게뎁</h1>
+        <div id="leftmenu">
+            <div id="lightbox">
+                <img src="img/coffee-pink.jpg" alt="" id="lightboximg">
+            </div>
+            
+            <div class="row">
+                <ul>
+                    <li><img src="img/coffee-pink.jpg" data-src="img/coffee-pink.jpg" class="pic"></li>
+                    <li><img src="img/coffee-blue.jpg" data-src="img/coffee-blue.jpg" class="pic"></li>
+                    <li><img src="img/coffee-gray.jpg" data-src="img/coffee-gray.jpg" class="pic"></li>
+                </ul>
+            </div>
+        </div>
+       
+        <div id="rm1">
+            <ul>
+                <li>상품명 : 에디오피아 게뎁</li>
+                <li class="rm-1">판매가 : 9,000원</li>
+                <li>배송비 : 3,000원</li>
+                <li>(50,000원 이상 구매시 무료)</li>
+                <li>적립금 : 180원(2%)</li>
+                <li>로스팅 :2019.06.17</li>
+                <li><button type="button" onclick="window.open('https://shopping.naver.com/cart?frm=gnb')">장바구니 담기</button></li>
+                <li class="rm-1"><a href="https://www.naver.com/">상세 설명 보기</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <script> 
+        var pics=document.getElementsByClassName("pic");
+        var lightbox=document.getElementById("lightbox");
+        var lightboximg=document.getElementById("lightboximg");
+
+        for(var i=0; i<pics.length; i++){
+            pics[i].addEventListener("click", showLightbox);
+        }
+
+        function showLightbox(){
+            var bicLocation=this.getAttribute("data-src"); 
+            lightboximg.setAttribute("src", bicLocation);         
+        }
+        
+    </script>
+</body>
+</html>
