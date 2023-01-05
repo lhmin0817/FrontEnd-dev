@@ -116,11 +116,11 @@
 }
 #explanation-box.col2{
     float: left;
- }
+}
 #explanation-box.col2 span{
     color: #0000ff;
     font-weight: bold;
- }
+}
 #required h3{
     font-size: 16px;
     padding-bottom: 8px;

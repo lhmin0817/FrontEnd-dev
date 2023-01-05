@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin:0 auto;
+            width:300px;
+        }
+        #a{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <img id="a" src="img/easys-1.jpg" alt="여자">
+    <img id="a" src="img/easys-2.jpg" alt="남자">
+
+    <img
+    onmouseover="woman(this)"
+    onmouseout="man(this)"
+    src="img/easys-2.jpg"
+    />
+    <script>
+        function woman(leaf) {
+            leaf.setAttribute('src', 'img/easys-2.jpg');
+        } 
+
+        function man(leaf) {
+            leaf.setAttribute('src', 'img/easys-1.jpg');
+        }
+    </script>
+    </body>
+</html>

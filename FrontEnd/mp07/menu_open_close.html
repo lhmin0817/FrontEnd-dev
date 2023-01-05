@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #menu{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    목차<span id="toc-toggle" onclick="openCloseToc()">보이기</span>
+
+    <ol id="menu">
+        <li>HTML </li>
+        <li>CSS </li>
+        <li>JavaScript</li>
+    </ol>
+
+    <script>
+        var toctoggle=document.getElementById("toc-toggle");
+        var show=document.getElementById("menu");
+        var a=0;
+        function openCloseToc() {
+            // ol 태그의 내용은 기본적으로 보이지 않도록 설정
+            //보이기를 클릭하면 ol태그의 내용을 출력하도록 <보이기> ==> <접히기>
+            a++
+            if(a%2==0) {
+                show.style.display="block";
+                toctoggle.textContent="접히기";
+            }else{
+                show.style.display="none";
+                toctoggle.textContent="보이기";
+            }
+        }
+    </script>
+</body>
+</html>
